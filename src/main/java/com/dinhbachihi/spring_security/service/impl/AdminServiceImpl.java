@@ -162,7 +162,16 @@ public class AdminServiceImpl implements AdminService {
         return students;
     }
 
+    @Override
+    public List<Classes> getAllClasses() {
+        List<Classes> classes = classesRepository.findAll();
+        return classes;
+    }
 
-
+    @Override
+    public List<User> getUserList() {
+        List<User> users = userRepository.findAll();
+        return users;
+    }
 
 }
